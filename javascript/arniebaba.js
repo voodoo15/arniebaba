@@ -1,9 +1,9 @@
-var arniebaba = angular.module('arniebaba', []);
+var arniebaba = angular.module('arniebaba', ['ngRoute']);
 
-arniebaba.controller('mainController', function($scope) {
-
-  console.log($scope);
+arniebaba.config(function ($routeProvider) {
 
 });
 
-console.log('test');
+arniebaba.controller('mainController', ['$scope', '$location', function($scope, $location) {
+
+}]);
