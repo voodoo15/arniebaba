@@ -11,14 +11,29 @@ arniebaba.config(['$routeProvider', '$locationProvider', function ($routeProvide
     .when('/cart', {
       templateUrl: 'pages/cart.html',
       controller: 'cartController'
-    });
+    })
 
 }]);
 
 arniebaba.controller('mainController', ['$scope', '$location', function ($scope, $location) {
+
+  $scope.product = {
+    id: 'apl',
+    description: 'apple',
+    quantity: 1
+  }
 
 }]);
 
 arniebaba.controller('cartController', ['$scope', '$location', function ($scope, $location) {
 
 }]);
+
+arniebaba.directive('product', function() {
+
+  return {
+    templateUrl: 'directives/product.html',
+    replace: true
+  }
+
+});
