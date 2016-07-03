@@ -15,10 +15,10 @@ arniebaba.config(['$routeProvider', '$locationProvider', function ($routeProvide
 
 }]);
 
-arniebaba.controller('mainController', ['$scope', '$location', function($scope, $location) {
+arniebaba.controller('mainController', ['$scope', '$location', function ($scope, $location) {
 
 }]);
 
-arniebaba.controller('cartController', ['$scope', '$location', function($scope, $location) {
+arniebaba.controller('cartController', ['$scope', '$location', function ($scope, $location) {
 
 }]);
