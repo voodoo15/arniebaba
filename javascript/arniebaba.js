@@ -32,8 +32,14 @@ arniebaba.controller('cartController', ['$scope', '$location', function ($scope,
 arniebaba.directive('product', function() {
 
   return {
+    restrict: 'EACM',
     templateUrl: 'directives/product.html',
-    replace: true
+    replace: true,
+    scope: {
+      productId: '@',
+      productDescription: '@',
+      productQuantity: '@'
+    }
   }
 
 });
