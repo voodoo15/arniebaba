@@ -3,7 +3,7 @@
     <h1 class="text-center">WELCOME TO ARNIEBABA</h1>
   </div>
 </div>
-<form class="container" role="search">
+<form class="container-fluid" role="search">
   <div class="form-group">
     <input type="text" class="form-control" placeholder="Search">
   </div>
@@ -11,5 +11,9 @@
 </form>
 <div class="container-fluid">
   <h3>Products</h3>
-  <product product-id="{{ product.id }}" product-description="{{ product.description }}" product-quantity="{{ product.quantity }}"></product>
+  <div class="row">
+    <div ng-repeat="product in products">
+      <product product-id="{{ product.id }}" product-description="{{ product.description }}" product-quantity="{{ product.quantity }}"></product>
+    </div>
+  </div>
 </div>

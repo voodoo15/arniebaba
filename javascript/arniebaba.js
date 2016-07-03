@@ -17,11 +17,37 @@ arniebaba.config(['$routeProvider', '$locationProvider', function ($routeProvide
 
 arniebaba.controller('mainController', ['$scope', '$location', function ($scope, $location) {
 
-  $scope.product = {
-    id: 'apl',
-    description: 'apple',
-    quantity: 1
-  }
+  $scope.products = [
+    {
+      id: 'apl',
+      description: 'apple',
+      quantity: 1
+    },
+    {
+      id: 'bna',
+      description: 'banana',
+      quantity: 1
+    },
+    {
+      id: 'grp',
+      description: 'grape',
+      quantity: 1
+    },
+    {
+      id: 'pch',
+      description: 'peach',
+      quantity: 1
+    },
+    {
+      id: 'lch',
+      description: 'lychee',
+      quantity: 1
+    },
+    {
+      id: 'ong',
+      description: 'orange',
+      quantity: 1
+    }]
 
 }]);
 
